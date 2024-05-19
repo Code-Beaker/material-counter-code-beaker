@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter App</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/983cbf0e6e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>Javascript Counter</h1>
+        <h2 class="count" id="count">0</h2>
+        <p>Click the buttons to change the default value!</p>
+        <div class="btn-flex">
+          <button
+            aria-hidden="false"
+            aria-label="increment"
+            class="btn increase"
+            id="incrementBtn"
+          >
+            <span class="btn-text">Increment</span>
+            <span class="btn-icon"><i class="fa-solid fa-plus"></i></span>
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="reset"
+            class="btn reset"
+            id="resetBtn"
+          >
+            <span class="btn-text">Reset</span>
+            <span class="btn-icon"
+              ><i class="fa-solid fa-arrows-rotate"></i
+            ></span>
+          </button>
+          <button
+            aria-hidden="false"
+            aria-label="decrement"
+            class="btn decrease"
+            id="decrementBtn"
+          >
+            <span class="btn-text">Decrement</span>
+            <span class="btn-icon"><i class="fa-solid fa-minus"></i></span>
+          </button>
+        </div>
+        <div class="additional-info-container">
+          <h3 class="additional-text">
+            <span class="square">Square:</span> <span id="square">0</span>
+          </h3>
+          <h3 class="additional-text">
+            <span class="squareRoot">Square root:</span>
+            <span id="squareRoot">0</span>
+            <p class="error" id="error">Unable to display</p>
+          </h3>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

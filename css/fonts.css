@@ -1,0 +1,29 @@
+/* Roboto Flex */
+@font-face {
+  font-family: "Roboto-Variable";
+  src: url("../assets/fonts/RobotoFlex-Regular.woff2") format("woff2");
+  font-variation-settings: "wght" 400;
+}
+@font-face {
+  font-family: "Roboto-Variable";
+  src: url("../assets/fonts/RobotoFlex-Regular.woff2") format("woff2");
+  font-variation-settings: "wght" 500;
+}
+
+@font-face {
+  font-family: "Roboto-Variable";
+  src: url("../assets/fonts/RobotoFlex-Regular.woff2") format("woff2");
+  font-variation-settings: "wght" 400;
+}
+
+@font-face {
+  font-family: "Roboto-Variable";
+  src: url("../assets/fonts/RobotoFlex-Regular.woff2") format("woff2");
+  font-variation-settings: "wght" 400;
+}
+
+@font-face {
+  font-family: "Roboto-Variable";
+  src: url("../assets/fonts/RobotoFlex-Regular.woff2") format("woff2");
+  font-variation-settings: "wght" 400;
+}
