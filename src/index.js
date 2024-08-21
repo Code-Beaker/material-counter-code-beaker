@@ -1,3 +1,6 @@
+import lightMode from "./assets/icons/light_mode_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
+import darkMode from "./assets/icons/dark_mode_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg";
+
 let count = 0;
 
 const value = document.getElementById("count");
@@ -37,4 +40,21 @@ buttons.forEach(function (item) {
 
     value.textContent = count;
   });
+});
+
+// Toggle between light and dark theme
+const themeToggle = document.querySelector(".toggle-theme");
+const themeToggleIcon = document.querySelector(".toggle-theme__icon");
+let lightThemeEnabled = true;
+
+themeToggle.addEventListener("click", () => {
+  document.querySelector(".container").classList.toggle("body-dark");
+
+  if (lightThemeEnabled) {
+    themeToggleIcon.setAttribute("src", lightMode);
+    lightThemeEnabled = false;
+  } else {
+    themeToggleIcon.setAttribute("src", darkMode);
+    lightThemeEnabled = true;
+  }
 });
