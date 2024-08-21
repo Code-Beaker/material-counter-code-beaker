@@ -53,7 +53,7 @@ const themeToggleIcon = document.querySelector(".toggle-theme__icon");
 let lightThemeEnabled = true;
 
 themeToggle.addEventListener("click", () => {
-  document.querySelector(".container").classList.toggle("body-dark");
+  document.body.classList.toggle("body-dark");
 
   if (lightThemeEnabled) {
     themeToggleIcon.setAttribute("src", lightMode);

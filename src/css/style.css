@@ -33,6 +33,7 @@
   --reset-hover: #f4837b;
   --reset-active: #f37168;
 
+  --body-bg: #fffec2;
   --container-body: #fff;
   --count-color: #000;
   --color-dark: #3c1626;
@@ -55,7 +56,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #fffec2;
+  background: var(--body-bg);
 }
 
 .container {
@@ -108,17 +109,27 @@ p {
   border: none;
   padding: 1rem;
   height: 3rem;
+  background-color: white;
   width: 3rem;
   margin: 1rem;
   display: flex;
-  background-color: transparent;
+  /* background-color: transparent; */
   justify-content: center;
   align-items: center;
+  transition: 100ms ease;
 }
 
 .toggle-theme__icon {
   display: block;
   max-width: 2rem;
+}
+
+.toggle-theme:hover {
+  opacity: 0.985;
+}
+
+.toggle-theme:active {
+  scale: 0.95;
 }
 
 button {
@@ -282,4 +293,5 @@ button {
   --square-bg: rgb(32, 99, 255);
   --count-color: #fff;
   --squareRoot-bg: rgb(7, 69, 184);
+  --body-bg: linear-gradient(45deg, darkblue, darkviolet);
 }
