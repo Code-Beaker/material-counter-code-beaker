@@ -280,6 +280,6 @@ button {
   --color-dark: #fff;
   --additional-text: #ddd;
   --square-bg: rgb(32, 99, 255);
-  --count-color: #000;
+  --count-color: #fff;
   --squareRoot-bg: rgb(7, 69, 184);
 }

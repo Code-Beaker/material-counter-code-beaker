@@ -7,6 +7,7 @@ const value = document.getElementById("count");
 const buttons = document.querySelectorAll(".btn");
 const square = document.getElementById("square");
 const squareRoot = document.getElementById("squareRoot");
+const container = document.querySelector(".container");
 
 buttons.forEach(function (item) {
   item.addEventListener("click", function (e) {
@@ -34,7 +35,11 @@ buttons.forEach(function (item) {
       squareRoot.style.display = "block";
       document.getElementById("error").style.display = "none";
     } else {
-      value.style.color = "currentColor";
+      if (container.classList.contains("body-dark")) {
+        value.style.color = "white";
+      } else {
+        value.style.color = "currentColor";
+      }
       document.getElementById("error").style.display = "none";
     }
 
